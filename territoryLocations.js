@@ -25,9 +25,9 @@ function showTerritories(ev) {
 //		overviewer.util.loadIcons();
 //		loadLocationLabels();
 //	}
-		removeLocationLabels();
-		overviewer.util.removeIcons();
+		overviewer.util.loadIcons();
 		loadTerritories();
+		loadLocationLabels();
 }
 
 function initTerritories() {
