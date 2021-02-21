@@ -1,4 +1,4 @@
-var showingTerritories = false;
+var showingTerritories = true;
 var requestInProgress = false;
 var territoryElements = [];
 var guildColorList = {};
@@ -32,7 +32,7 @@ function showTerritories(ev) {
 
 function initTerritories() {
 	requestInProgress = true;
-	$.ajax({url: 'https://raw.githubusercontent.com/tylastrog/fiascos-smp-overviewer/main/public_api.php.json?action=territoryList', cache: true, success: function(result) {
+	$.ajax({url: 'https://raw.githubusercontent.com/tylastrog/fiascos-smp-overviewer/main/playerTerritories.json', cache: true, success: function(result) {
 		for(var name in result.territories) {
 			var territory = result.territories[name];
       
