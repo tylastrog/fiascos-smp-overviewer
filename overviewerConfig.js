@@ -53,7 +53,7 @@ var overviewerConfig = {
             "imgextension": "png",
             "isOverlay": false,
             "poititle": "Markers",
-            "showlocationmarker": true,
+            "showlocationmarker": false,
             "center": [
                 0,
                 112,
