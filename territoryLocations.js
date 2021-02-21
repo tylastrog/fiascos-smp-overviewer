@@ -29,7 +29,7 @@ function showTerritories(ev) {
 
 function initTerritories() {
 	requestInProgress = true;
-	$.ajax({url: 'http://tylastrog.com/map/public_api.php?action=territoryList', cache: true, success: function(result) {
+	$.ajax({url: 'https://github.com/tylastrog/fiascos-smp-overviewer/blob/main/public_api.php.json?action=territoryList', cache: true, success: function(result) {
 		for(var name in result.territories) {
 			var territory = result.territories[name];
       
