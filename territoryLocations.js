@@ -16,15 +16,18 @@ overviewer.util.ready(function() {
 });
 
 function showTerritories(ev) {
-	if (ev.checked) {
+//	if (ev.checked) {
+//		removeLocationLabels();
+//		overviewer.util.removeIcons();
+//		loadTerritories();
+//	} else {
+//		removeTerritories();
+//		overviewer.util.loadIcons();
+//		loadLocationLabels();
+//	}
 		removeLocationLabels();
 		overviewer.util.removeIcons();
 		loadTerritories();
-	} else {
-		removeTerritories();
-		overviewer.util.loadIcons();
-		loadLocationLabels();
-	}
 }
 
 function initTerritories() {
